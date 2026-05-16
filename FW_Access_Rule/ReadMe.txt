@@ -22,3 +22,22 @@ git branch -a (to see all branches)
 
 git config --global user.name "Manoj Pedekar"
 git config --global user.email mpedekar@sscinc.com
+
+##for resetting the branch to main and pushing it to remote repository
+git reset --hard main
+git push origin dev --force
+
+
+******
+day to day to work
+
+git switch mpedekar_dev
+git push -u origin mpedekar_dev  - -u means set upstream tracking. It tells Git: This local branch should track origin/my_work_branch.”
+
+After doing this once, Git remembers the connection.
+git merge main  - This will merge from main branch to this branch only.
+
+DO NOT RUN
+git switch main   - You will switch to main repo.
+git merge mpedekar_dev  -- This will merge from this merge to main branch only to the local repo.
+git push origin main -- This will push changes from local repo to remote
