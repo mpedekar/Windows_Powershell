@@ -22,3 +22,7 @@ git branch -a (to see all branches)
 
 git config --global user.name "Manoj Pedekar"
 git config --global user.email mpedekar@sscinc.com
+
+git reset --hard main  (run on the branch if you reset to same as main)
+git push origin <branch name> --force   (force push to  branch after reset)
+
