@@ -16,6 +16,7 @@ mkfile .gitignore  #(create file which is ignored by git by default and then typ
  git remote remove origin
  git branch -M master
  git push -u origin main
+ git switch -c <branch name> (create and switch to new branch. If branch already exists then it will switch to that branch using -c)
 
 git branch -a (to see all branches)
 
